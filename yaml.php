@@ -31,47 +31,55 @@ define('YAML_LITERAL_SCALAR_STYLE', 4);
 define('YAML_FOLDED_SCALAR_STYLE', 5);
 
 /**
- * The tag @c !!null with the only possible value: @c null.
+ * Devoid of value.
  */
 define('YAML_NULL_TAG', 'tag:yaml.org,2002:null');
 
 /**
- * The tag @c !!bool with the values: @c true and @c falce.
+ * Mathematical Booleans.
  */
 define('YAML_BOOL_TAG', 'tag:yaml.org,2002:bool');
 
 /**
- * The tag @c !!str for string values.
+ * A sequence of zero or more Unicode characters.
  */
 define('YAML_STR_TAG', 'tag:yaml.org,2002:str');
 
 /**
- * The tag @c !!int for integer values.
+ * Mathematical integers.
  */
 define('YAML_INT_TAG', 'tag:yaml.org,2002:int');
 
 /**
- * The tag @c !!float for float values.
+ * Floating-point approximation to real numbers.
  */
 define('YAML_FLOAT_TAG', 'tag:yaml.org,2002:float');
 
 /**
- * The tag @c !!timestamp for date and time values.
+ * A point in time.
  */
 define('YAML_TIMESTAMP_TAG', 'tag:yaml.org,2002:timestamp');
 
 /**
- * The tag @c !!seq is used to denote sequences.
+ * Sequence of arbitrary values.
  */
 define('YAML_SEQ_TAG', 'tag:yaml.org,2002:seq');
 
 /**
- * The tag @c !!map is used to denote mapping.
+ * Unordered set of key: value pairs without duplicates.
  */
 define('YAML_MAP_TAG', 'tag:yaml.org,2002:map');
 
 define('YAML_PHP_TAG', '!php/object');
+
+/**
+ * Specify one or more mappings to be merged with the current one.
+ */
 define('YAML_MERGE_TAG', 'tag:yaml.org,2002:merge');
+
+/**
+ * A sequence of zero or more octets (8 bit values).
+ */
 define('YAML_BINARY_TAG', 'tag:yaml.org,2002:binary');
 
 /**
